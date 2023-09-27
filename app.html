@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Save Employee</h1>
+
+        <form id="stdForm" method="get">
+            <div class="mb-3">
+                <label for="rollNo" class="form-label">Roll No:</label>
+                <input type="text" class="form-control" id="rollNo" name="rollNo" onchange="getRollNo()" required >
+            </div>
+
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="class" class="form-label">class</label>
+                <input type="text" class="form-control" id="class" name="class" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthDate" class="form-label">Birth Date:</label>
+                <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="enrollmentDate" class="form-label">Enrollment Date</label>
+                <input type="date" class="form-control" id="enrollmentDate" name="enrollmentDate" required>
+            </div>
+            <input type="button" class="btn btn-primary" id="saveButton" value="Save" onclick="saveData()" disabled>
+            <input type="button" class="btn btn-primary" id="updateButton" value="Update" onclick="updateStudent()"
+                disabled>
+            <input type="button" class="btn btn-primary" id="resetButton" value="Reset" onclick="resetForm()" disabled>
+            <!-- <button type="submit" class="btn btn-primary" onclick="saveEmployee()">Save Employee</button> -->
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
