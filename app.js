@@ -1,5 +1,5 @@
 
-let connToken = "90931679|-31949327113133353|90961535"
+let connToken = " " //Add your token
 let stdDBName = "STUDENT-TABLE";
 let stdRelationName = "SCHOOL-DB";
 let jpdbBaseUrl = "http://api.login2explore.com:5577"
